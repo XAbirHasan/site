@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --build --force",
-    "lint": "eslint . --fix"
+    "lint": "eslint . --fix",
+    "validate-data": "tsx scripts/validate-data.ts"
   },
   "dependencies": {
     "@fontsource/roboto": "5.2.5",

@@ -1,0 +1,132 @@
+{
+  "personal": {
+    "name": "Md Abir Hassan",
+    "title": "Software Engineer",
+    "location": "Dhaka, Bangladesh",
+    "timezone": "Asia/Dhaka",
+    "timezoneDisplay": "GMT+6",
+    "email": "abirhassanalrabbi4005@gmail.com",
+    "linkedin": "https://linkedin.com/in/abir-hassan",
+    "github": "https://github.com/XAbirHasan",
+    "summary": "Software Engineer with 3+ years of experience building scalable, cloud-native applications in AWS. Expertise in backend development, automation, media asset management (MAM), and performance optimization. Passionate about clean code, security, and mentoring.",
+    "aboutSummary": "Software Engineer with expertise in building scalable and secure multi-tenant cloud-based applications, specializing in AWS infrastructure, backend services, cloud-native solutions, and media & asset management (MAM) systems."
+  },
+  "skills": {
+    "Programming Languages": [
+      "JavaScript",
+      "TypeScript", 
+      "Python",
+      "C",
+      "C++",
+      "Java"
+    ],
+    "Backend": [
+      "Nest.js",
+      "Express.js"
+    ],
+    "Databases": [
+      "DynamoDB",
+      "Firebase",
+      "MySQL",
+      "OpenSearch"
+    ],
+    "Frontend": [
+      "Vue.js",
+      "Vuetify",
+      "Nuxt.js"
+    ],
+    "Cloud & DevOps": [
+      "AWS (S3, Lambda, API Gateway, CloudFront, Elastic Beanstalk)",
+      "Docker",
+      "CI/CD (GitHub Actions, AWS CodeBuild & CodePipeline)",
+      "Serverless"
+    ],
+    "Others": [
+      "Git",
+      "FFmpeg",
+      "Media Asset Management (MAM)",
+      "AI",
+      "Tensorflow"
+    ]
+  },
+  "projects": [
+    {
+      "title": "DocoTeam - Multi-Tenant Document Management",
+      "description": "Built a secure, scalable document platform on AWS Elastic Beanstalk. Implemented key features including request upload, secure file sharing, user management, permission control, reminder notifications, and data retention policies.",
+      "technologies": ["Nest.js", "React", "AWS S3", "Stripe"],
+      "url": "https://docoteam.com",
+      "featured": true,
+      "category": "work"
+    },
+    {
+      "title": "Mimir MAM Platform",
+      "description": "Enterprise media asset management platform serving 4,000+ users across 15+ enterprises. Built cloud-native solutions with scalability, security, and AWS cloud integration.",
+      "technologies": ["Vue.js", "TypeScript", "AWS", "FFmpeg", "OpenSearch", "DynamoDB"],
+      "featured": false,
+      "category": "work"
+    },
+    {
+      "title": "Portfolio Website",
+      "description": "Simple, text-based portfolio website following professional developer aesthetics.",
+      "technologies": ["Vue 3", "TypeScript", "Vuetify"],
+      "url": "https://github.com/XAbirHasan/site",
+      "featured": false,
+      "category": "work"
+    }
+  ],
+  "workExperience": [
+    {
+      "company": "Craftsmensoftware",
+      "position": "Software Development Engineer II",
+      "subtitle": "Consultant at Mimir",
+      "location": "Dhaka, Bangladesh",
+      "period": "Dec 2023 – Present",
+      "description": "Led the Mimir Extension Team in developing cloud-native solutions for an enterprise media asset management platform, focusing on scalability, security, and AWS cloud integration.",
+      "achievements": [
+        "Automated QA releases, reducing time by 98% using GitHub Actions",
+        "Integrated MFA (TOTP) with AWS Cognito, enhancing security",
+        "Eliminated XSS & code injection vulnerabilities",
+        "Migrated 50% of Vue2 codebase to Vue3, improving performance & maintainability",
+        "Developed FFmpeg-based audio downmixing and WebSocket-driven folder management",
+        "Optimized search performance by reducing OpenSearch query execution time by 40%",
+        "Increased file upload success rate by 95% through retry mechanisms",
+        "Trained 50+ engineers at Craftsmen Excellence Academy on Git best practices"
+      ]
+    },
+    {
+      "company": "Craftsmensoftware",
+      "position": "Software Development Engineer I",
+      "subtitle": "Consultant at Mimir & Qbics media",
+      "location": "Dhaka, Bangladesh",
+      "period": "Dec 2021 - Dec 2023",
+      "description": "Built a multi-tenant MAM system serving 4,000+ users across 15+ enterprises.",
+      "achievements": [
+        "Engineered S3 multipart upload workflow with resumable support, reducing transfer failures by 95%",
+        "Reduced deployment time by 40% with AWS CodePipeline & CodeBuild automation",
+        "Developed real-time user & file tracking using AWS Lambda, DynamoDB, and SES"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "United International University",
+      "degree": "B.Sc. in Computer Science",
+      "location": "Dhaka, Bangladesh",
+      "graduationDate": "August 2021",
+      "gpa": "3.91"
+    }
+  ],
+  "research": [
+    {
+      "title": "SuicideBD: A Suicidal Dataset for Bangladesh",
+      "status": "Not published",
+      "url": "https://doi.org/10.6084/m9.figshare.20222724"
+    }
+  ],
+  "pages": {
+    "work": {
+      "title": "Work",
+      "subtitle": "Built 20+ projects across various domains, exploring new technologies."
+    }
+  }
+}
