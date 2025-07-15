@@ -4,8 +4,15 @@
 .page-container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 48px 16px;
+  padding: 16px 16px 48px; /* Reduced top padding since nav-spacer handles the spacing */
   line-height: 1.6;
+}
+
+/* Responsive padding adjustments */
+@media (max-width: 600px) {
+  .page-container {
+    padding: 12px 12px 32px; /* Tighter spacing on mobile */
+  }
 }
 
 /* Typography hierarchy */

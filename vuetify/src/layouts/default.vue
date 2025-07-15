@@ -2,15 +2,18 @@
   <v-app>
     <!-- Navigation Bar -->
     <v-app-bar
-      app
-      color="transparent"
+      color="surface"
       elevation="0"
+      fixed
       flat
       height="64"
     >
       <v-container class="d-flex align-center justify-space-between px-4">
         <!-- Logo/Brand -->
         <router-link class="brand-link" to="/">
+          <div aria-label="Logo" class="cube-logo">
+            <div class="cube" />
+          </div>
           <span class="brand-text text-h6">Abir</span>
         </router-link>
 
@@ -74,7 +77,9 @@
     </v-navigation-drawer>
 
     <!-- Main Content -->
-    <v-main>
+    <v-main class="main-content">
+      <!-- Spacer for fixed navigation -->
+      <div class="nav-spacer" />
       <router-view />
     </v-main>
 
@@ -140,5 +145,48 @@ const toggleTheme = () => {
 
 .footer-content p {
   color: rgb(var(--v-theme-on-surface-variant));
+}
+
+.main-content {
+  min-height: 100vh !important;
+}
+
+.nav-spacer {
+  height: 64px;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .nav-spacer {
+    height: 64px; /* Keep consistent height */
+  }
+}
+
+.v-app-bar {
+  background-color: rgba(var(--v-theme-surface), 0.6) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(var(--v-theme-outline), 0.12);
+}
+
+.cube-logo {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.cube {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(135deg, #1976D2 60%, #42A5F5 100%);
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.10);
+  transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s cubic-bezier(.4,2,.6,1);
+}
+.cube-logo:hover .cube {
+  transform: scale(1.08);
+  box-shadow: 0 4px 16px rgba(25, 118, 210, 0.18);
 }
 </style>
