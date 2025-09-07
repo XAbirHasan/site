@@ -10,6 +10,7 @@ export const usePortfolio = () => {
   const projects = computed(() => data.value.projects);
   const workExperience = computed(() => data.value.workExperience);
   const education = computed(() => data.value.education);
+  const certifications = computed(() => data.value.certifications || []);
   const research = computed(() => data.value.research);
   const pages = computed(() => data.value.pages);
 
@@ -17,6 +18,11 @@ export const usePortfolio = () => {
 
   const getSkillsByCategory = (category: string) => {
     return data.value.skills[category] || [];
+  };
+
+  const getSkillNamesByCategory = (category: string) => {
+    const skills = data.value.skills[category] || [];
+    return skills.map(skill => skill.name);
   };
 
   const featuredProjects = computed(() =>
@@ -29,6 +35,10 @@ export const usePortfolio = () => {
 
   const allProjects = computed(() => data.value.projects);
 
+  const getProjectsByCategory = (category: string) => {
+    return data.value.projects.filter(project => project.category === category);
+  };
+
   return {
     data,
     personal,
@@ -36,10 +46,13 @@ export const usePortfolio = () => {
     projects,
     workExperience,
     education,
+    certifications,
     research,
     pages,
     skillCategories,
     getSkillsByCategory,
+    getSkillNamesByCategory,
+    getProjectsByCategory,
     featuredProjects,
     workProjects,
     allProjects,

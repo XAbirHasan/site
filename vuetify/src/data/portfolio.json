@@ -1,132 +1,433 @@
 {
   "personal": {
     "name": "Md Abir Hassan",
-    "title": "Software Engineer",
+    "title": "Senior Software Engineer | AWS Cloud & Media Technology",
     "location": "Dhaka, Bangladesh",
     "timezone": "Asia/Dhaka",
     "timezoneDisplay": "GMT+6",
     "email": "abirhassanalrabbi4005@gmail.com",
     "linkedin": "https://linkedin.com/in/abir-hassan",
     "github": "https://github.com/XAbirHasan",
-    "summary": "Software Engineer with 3+ years of experience building scalable, cloud-native applications in AWS. Expertise in backend development, automation, media asset management (MAM), and performance optimization. Passionate about clean code, security, and mentoring.",
-    "aboutSummary": "Software Engineer with expertise in building scalable and secure multi-tenant cloud-based applications, specializing in AWS infrastructure, backend services, cloud-native solutions, and media & asset management (MAM) systems."
+    "openToRemote": true,
+    "openToRelocation": true,
+    "relocationNote": "Require Visa Sponsorship",
+    "summary": "Experienced Software Engineer with 3+ years building cloud-native and enterprise media asset management platforms. Proven record of reducing costs, boosting performance, and securing large-scale systems. Adept at AWS architecture, backend engineering, CI/CD, and mentoring. Seeking senior roles in Cloud Engineering / Media Tech where I can scale global systems and lead innovation.",
+    "aboutSummary": "Senior Software Engineer with expertise in building scalable and secure multi-tenant cloud-based applications, specializing in AWS infrastructure, backend services, cloud-native solutions, and media & asset management (MAM) systems. Passionate about mentoring, clean code practices, and automation. Open to remote work and relocation opportunities. Let's connect if you love tech, want to collaborate, or simply enjoy exchanging ideas! 😊",
+    "coreStrengths": ["AWS Cloud Services", "Backend Engineering", "Performance Optimization", "Git", "CI/CD", "Media Processing", "Multi-tenant Architecture", "Mentorship"],
+    "availability": {
+      "notice": "2 weeks",
+      "relocation": "Flexible (Require Visa Sponsorship)",
+      "remote": "Open to Remote"
+    }
   },
   "skills": {
     "Programming Languages": [
-      "JavaScript",
-      "TypeScript", 
-      "Python",
-      "C",
-      "C++",
-      "Java"
-    ],
-    "Backend": [
-      "Nest.js",
-      "Express.js"
-    ],
-    "Databases": [
-      "DynamoDB",
-      "Firebase",
-      "MySQL",
-      "OpenSearch"
-    ],
-    "Frontend": [
-      "Vue.js",
-      "Vuetify",
-      "Nuxt.js"
+      { "name": "JavaScript", "proficiency": "Expert", "level": 95 },
+      { "name": "TypeScript", "proficiency": "Expert", "level": 95 },
+      { "name": "Python", "proficiency": "Advanced", "level": 80 },
+      { "name": "Go", "proficiency": "Intermediate", "level": 65 },
+      { "name": "Java", "proficiency": "Advanced", "level": 75 },
+      { "name": "C/C++", "proficiency": "Advanced", "level": 85 }
     ],
     "Cloud & DevOps": [
-      "AWS (S3, Lambda, API Gateway, CloudFront, Elastic Beanstalk)",
-      "Docker",
-      "CI/CD (GitHub Actions, AWS CodeBuild & CodePipeline)",
-      "Serverless"
+      { "name": "AWS S3", "proficiency": "Expert", "level": 95 },
+      { "name": "AWS Lambda", "proficiency": "Expert", "level": 95 },
+      { "name": "AWS API Gateway", "proficiency": "Advanced", "level": 85 },
+      { "name": "AWS CloudFront", "proficiency": "Advanced", "level": 85 },
+      { "name": "AWS Cognito", "proficiency": "Advanced", "level": 85 },
+      { "name": "AWS Elastic Beanstalk", "proficiency": "Advanced", "level": 80 },
+      { "name": "AWS CodePipeline", "proficiency": "Advanced", "level": 85 },
+      { "name": "AWS CodeBuild", "proficiency": "Advanced", "level": 85 },
+      { "name": "Docker", "proficiency": "Advanced", "level": 85 },
+      { "name": "Serverless", "proficiency": "Advanced", "level": 85 },
+      { "name": "CI/CD (GitHub Actions)", "proficiency": "Expert", "level": 90 }
     ],
-    "Others": [
-      "Git",
-      "FFmpeg",
-      "Media Asset Management (MAM)",
-      "AI",
-      "Tensorflow"
+    "Backend Frameworks": [
+      { "name": "Node.js", "proficiency": "Expert", "level": 95 },
+      { "name": "Nest.js", "proficiency": "Expert", "level": 90 },
+      { "name": "Express.js", "proficiency": "Expert", "level": 90 }
+    ],
+    "Frontend & Mobile": [
+      { "name": "Vue.js", "proficiency": "Expert", "level": 95 },
+      { "name": "Nuxt.js", "proficiency": "Advanced", "level": 80 },
+      { "name": "React", "proficiency": "Advanced", "level": 80 },
+      { "name": "Vuetify", "proficiency": "Expert", "level": 90 },
+      { "name": "Android", "proficiency": "Intermediate", "level": 70 },
+      { "name": "Flutter", "proficiency": "Intermediate", "level": 65 }
+    ],
+    "Databases": [
+      { "name": "DynamoDB", "proficiency": "Expert", "level": 95 },
+      { "name": "OpenSearch", "proficiency": "Advanced", "level": 85 },
+      { "name": "MySQL", "proficiency": "Advanced", "level": 85 },
+      { "name": "Firebase", "proficiency": "Advanced", "level": 80 }
+    ],
+    "Tools & Others": [
+      { "name": "Git", "proficiency": "Expert", "level": 95 },
+      { "name": "GitHub Actions", "proficiency": "Expert", "level": 95 },
+      { "name": "FFmpeg", "proficiency": "Advanced", "level": 85 },
+      { "name": "New Relic", "proficiency": "Advanced", "level": 80 },
+      { "name": "Stripe", "proficiency": "Advanced", "level": 80 },
+      { "name": "Machine Learning", "proficiency": "Intermediate", "level": 65 }
     ]
   },
   "projects": [
     {
-      "title": "DocoTeam - Multi-Tenant Document Management",
-      "description": "Built a secure, scalable document platform on AWS Elastic Beanstalk. Implemented key features including request upload, secure file sharing, user management, permission control, reminder notifications, and data retention policies.",
-      "technologies": ["Nest.js", "React", "AWS S3", "Stripe"],
-      "url": "https://docoteam.com",
+      "title": "Mimir MAM Platform",
+      "description": "Cloud-native media collaboration platform for professionals with production asset management, AI-powered metadata enrichment, and Adobe Premiere Pro integration. Serves 12,000+ active users across 22+ organizations including broadcasters, production companies, and digital agencies.",
+      "technologies": ["Vue.js", "TypeScript", "AWS", "FFmpeg", "OpenSearch", "DynamoDB", "WebSocket", "GitHub Actions", "New Relic"],
+      "url": "https://onemimir.com/",
       "featured": true,
-      "category": "work"
+      "category": "work",
+      "year": "2021-Present"
     },
     {
-      "title": "Mimir MAM Platform",
-      "description": "Enterprise media asset management platform serving 4,000+ users across 15+ enterprises. Built cloud-native solutions with scalability, security, and AWS cloud integration.",
-      "technologies": ["Vue.js", "TypeScript", "AWS", "FFmpeg", "OpenSearch", "DynamoDB"],
+      "title": "Q-upload - Multi-part Upload System",
+      "description": "Application for uploading and storing videos, images with associated metadata files using multi-part upload. Features secure file sharing and cloud integration.",
+      "technologies": ["TypeScript", "Vue.js", "Vuetify", "AWS Lambda", "AWS S3", "DynamoDB", "Cognito", "API Gateway", "SES", "CodeBuild", "CodePipeline"],
+      "featured": true,
+      "category": "work",
+      "year": "Jan 2022 - Mar 2022"
+    },
+    {
+      "title": "DocoTeam - Multi-Tenant Document Management",
+      "description": "Secure, multi-tenant document management platform running on AWS Elastic Beanstalk. Features request upload, secure file sharing, MFA authentication, user & permission management, reminder notifications, and data retention policies.",
+      "technologies": ["Nest.js", "React", "AWS S3", "AWS Elastic Beanstalk", "Stripe", "AWS CodeBuild", "AWS CodePipeline"],
+      "url": "https://docoteam.com",
+      "featured": true,
+      "category": "work",
+      "year": "2023-Present"
+    },
+    {
+      "title": "QA-Tool - Automated Pull Request Reporting",
+      "description": "Command-line tool and GitHub Action to automate pull request reporting for QA release workflows. Built during a weekend to solve manual QA processes, reducing PR creation time from 60+ minutes to under a minute (98% time saving).",
+      "technologies": ["Node.js", "TypeScript", "GitHub Actions", "CLI Tools", "Octokit API"],
+      "url": "https://github.com/XAbirHasan/qa-tool",
+      "featured": true,
+      "category": "work",
+      "year": "2024"
+    },
+    {
+      "title": "Suicide Prevention ML Platform",
+      "description": "Thesis project showcasing machine learning results for suicide prevention during the pandemic. Web application displaying comprehensive ML analysis and results using different algorithms.",
+      "technologies": ["Python", "Django", "HTML", "CSS", "JavaScript", "Machine Learning"],
+      "url": "https://lnkd.in/gefYBA9U",
+      "featured": true,
+      "category": "academic",
+      "year": "Jun 2021 - Jul 2021"
+    },
+    {
+      "title": "Stock Trading ML Application",
+      "description": "Automated stock trading app using Machine Learning for future value predictions. Features best valued stocks recommendations and trading insights for users.",
+      "technologies": ["Python", "Django", "HTML", "CSS", "JavaScript", "Machine Learning"],
+      "url": "https://lnkd.in/gEQ8vZhA",
       "featured": false,
-      "category": "work"
+      "category": "ml",
+      "year": "Apr 2021 - May 2021"
+    },
+    {
+      "title": "WorldClock Flutter App",
+      "description": "Flutter application to display world time with API integration. Second Flutter project focused on learning mobile development fundamentals.",
+      "technologies": ["Dart", "Flutter", "API Integration"],
+      "url": "https://lnkd.in/g6yVFQTx",
+      "featured": false,
+      "category": "mobile",
+      "year": "Aug 2021"
+    },
+    {
+      "title": "KingsFoods Commercial Android App",
+      "description": "First commercial Android application developed for KingsFoodsBD. Full-featured food delivery app with user management and ordering system.",
+      "technologies": ["Java", "Android", "Firebase"],
+      "url": "https://lnkd.in/gHPirBSS",
+      "featured": false,
+      "category": "mobile",
+      "year": "Dec 2020 - Mar 2021"
+    },
+    {
+      "title": "BroX Unity3D Platform Game",
+      "description": "Platform game with low poly characters, obstacles, environment & enemies. All low poly models created using Blender. Ongoing development project.",
+      "technologies": ["C#", "Unity3D", "Blender"],
+      "url": "https://lnkd.in/gtJeGuY8",
+      "featured": false,
+      "category": "games",
+      "year": "Sep 2020 - Oct 2020"
+    },
+    {
+      "title": "Home Automation System",
+      "description": "Smart home monitoring system controllable through mobile devices. Selected for 1st runner up in university project. Features Firebase integration and MIT App Inventor mobile app.",
+      "technologies": ["C/C++", "Arduino", "NodeMCU", "Firebase", "MIT App Inventor"],
+      "url": "https://lnkd.in/gAvckEXZ",
+      "featured": false,
+      "category": "iot",
+      "year": "Sep 2019"
+    },
+    {
+      "title": "Zetta E-commerce Platform",
+      "description": "Commercial Android e-commerce platform for automobile parts. Features push notifications, OTP, and online payment gateway integration.",
+      "technologies": ["Java", "Android", "Firebase", "Payment Gateway"],
+      "url": "https://lnkd.in/gYWGF-qB",
+      "featured": false,
+      "category": "mobile",
+      "year": "Jun 2019 - Jul 2019"
+    },
+    {
+      "title": "Shopee Mart E-commerce Website",
+      "description": "E-commerce platform for clothes, electronics, and mobile phones. Full-stack web application with commercial features.",
+      "technologies": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+      "url": "https://lnkd.in/gw469X-G",
+      "featured": false,
+      "category": "web",
+      "year": "May 2019"
+    },
+    {
+      "title": "Child Care Platform",
+      "description": "Web-based platform for working parents to manage child care. University Database Management Systems Laboratory project.",
+      "technologies": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+      "url": "https://lnkd.in/ggbwnD3Q",
+      "featured": false,
+      "category": "web",
+      "year": "Apr 2019"
+    },
+    {
+      "title": "1D Pong Arduino Game",
+      "description": "Arduino-based LED strip 1-dimensional pong game. University Electronics Laboratory project showcasing creative use of LED strips for gaming.",
+      "technologies": ["C/C++", "Arduino", "WS2812B LED Strip"],
+      "url": "https://lnkd.in/gCrjkYba",
+      "featured": false,
+      "category": "iot",
+      "year": "Jun 2018 - Jul 2018"
+    },
+    {
+      "title": "Online Quiz Android App",
+      "description": "First Android application - quiz app where users register, sign in, and participate in quizzes with progress tracking.",
+      "technologies": ["Java", "Android", "MySQL"],
+      "url": "https://lnkd.in/gAYT57ef",
+      "featured": false,
+      "category": "mobile",
+      "year": "Jun 2018 - Jul 2018"
+    },
+    {
+      "title": "Super Mario C++ Game",
+      "description": "Recreation of classic Super Mario game using C++ and iGraphics. Completed in 3 days with advanced graphics and gameplay mechanics.",
+      "technologies": ["C/C++", "iGraphics"],
+      "url": "https://lnkd.in/gCAjjRsU",
+      "featured": false,
+      "category": "games",
+      "year": "Sep 2017"
+    },
+    {
+      "title": "Master Archer Game",
+      "description": "University project featuring advanced animation and object motion handling. Selected as best project by lecturer with bonus marks (50/40).",
+      "technologies": ["C/C++", "iGraphics"],
+      "url": "https://lnkd.in/gxcVBGNu",
+      "featured": false,
+      "category": "games",
+      "year": "Aug 2017"
+    },
+    {
+      "title": "Tic Tac Toe with AI",
+      "description": "Advanced Tic Tac Toe game implementing min-max algorithm for unbeatable AI opponent. Available in both C++ console and Python GUI versions.",
+      "technologies": ["C++", "Python", "Min-Max Algorithm"],
+      "url": "https://lnkd.in/efrBk7UP",
+      "featured": false,
+      "category": "games",
+      "year": "Apr 2017 & Feb 2020"
+    },
+    {
+      "title": "Snake Game Collection",
+      "description": "Multiple implementations of Snake game across different platforms and languages - from first C project to Java Swing and iGraphics versions.",
+      "technologies": ["C", "Java", "C/C++", "iGraphics", "Java Swing"],
+      "url": "https://lnkd.in/eZAgSm5p",
+      "featured": false,
+      "category": "games",
+      "year": "Feb 2017 - Jun 2018"
+    },
+    {
+      "title": "3D Art & Modeling Projects",
+      "description": "Collection of 3D modeling projects including boats, bikes, horror environments, low-poly characters, and game environments created with Blender.",
+      "technologies": ["Blender", "3D Modeling"],
+      "url": "https://lnkd.in/gMND-wN7",
+      "featured": false,
+      "category": "3d",
+      "year": "2020-2021"
+    },
+    {
+      "title": "NEGA_CUBE Unity Game",
+      "description": "Simple coin collection game developed for Unity learning. Classic arcade-style gameplay with progression system.",
+      "technologies": ["C#", "Unity3D"],
+      "url": "https://lnkd.in/gZw5pxvN",
+      "featured": false,
+      "category": "games",
+      "year": "Jul 2020"
+    },
+    {
+      "title": "Hotel Outgoing Management System",
+      "description": "Hostel outgoing management system with Python Tkinter GUI and MySQL database integration. First Python GUI project.",
+      "technologies": ["Python", "Tkinter", "MySQL"],
+      "url": "https://lnkd.in/gVJkWCCV",
+      "featured": false,
+      "category": "desktop",
+      "year": "Feb 2020"
+    },
+    {
+      "title": "Demo Awareness Mobile App",
+      "description": "School project showcase app with API integration. Dummy application for educational purposes with modern mobile features.",
+      "technologies": ["Java", "Android", "API Integration"],
+      "url": "https://lnkd.in/ghAXxbNt",
+      "featured": false,
+      "category": "mobile",
+      "year": "Apr 2020"
+    },
+    {
+      "title": "Google Authentication System",
+      "description": "Simple web-based Google authentication system for mobile applications. Reusable component for user authentication workflows.",
+      "technologies": ["HTML", "CSS", "PHP"],
+      "url": "https://lnkd.in/gbdkSyXm",
+      "featured": false,
+      "category": "web",
+      "year": "Jun 2019"
+    },
+    {
+      "title": "Java Calculator",
+      "description": "Desktop calculator application built with Java Swing. Early Java programming project demonstrating GUI development skills.",
+      "technologies": ["Java", "Java Swing"],
+      "url": "https://lnkd.in/getMeAuA",
+      "featured": false,
+      "category": "desktop",
+      "year": "Jan 2018"
+    },
+    {
+      "title": "Movie Ticket Booking System",
+      "description": "iGraphics-based movie ticket booking system replicating website functionality in desktop application format.",
+      "technologies": ["C/C++", "iGraphics"],
+      "url": "https://lnkd.in/gthgYMBd",
+      "featured": false,
+      "category": "desktop",
+      "year": "Nov 2017"
     },
     {
       "title": "Portfolio Website",
-      "description": "Simple, text-based portfolio website following professional developer aesthetics.",
-      "technologies": ["Vue 3", "TypeScript", "Vuetify"],
+      "description": "Modern, responsive portfolio website with live timezone display, project showcase, and clean professional design. Built with Vue 3 and Vuetify.",
+      "technologies": ["Vue 3", "TypeScript", "Vuetify", "Vite"],
       "url": "https://github.com/XAbirHasan/site",
       "featured": false,
-      "category": "work"
+      "category": "web",
+      "year": "2024-Present"
+    },
+    {
+      "title": "Projects Collection Showcase",
+      "description": "Comprehensive video playlist showcasing 30+ projects across various domains, technologies, and years of development journey.",
+      "technologies": ["Various"],
+      "url": "https://www.youtube.com/playlist?list=PLwG9xO6t87mBU9-YydbRBPbUIpU3barpw",
+      "featured": false,
+      "category": "showcase",
+      "year": "2017-Present"
     }
   ],
   "workExperience": [
     {
       "company": "Craftsmensoftware",
       "position": "Software Development Engineer II",
-      "subtitle": "Consultant at Mimir",
+      "subtitle": "Client: Mimir (Enterprise Media Asset Management Platform)",
       "location": "Dhaka, Bangladesh",
-      "period": "Dec 2023 – Present",
-      "description": "Led the Mimir Extension Team in developing cloud-native solutions for an enterprise media asset management platform, focusing on scalability, security, and AWS cloud integration.",
+      "period": "Dec 2023 - Present",
+      "description": "Developing cloud-native solutions for enterprise media asset management platform, focusing on scalability, security, and AWS cloud integration.",
       "achievements": [
-        "Automated QA releases, reducing time by 98% using GitHub Actions",
-        "Integrated MFA (TOTP) with AWS Cognito, enhancing security",
-        "Eliminated XSS & code injection vulnerabilities",
-        "Migrated 50% of Vue2 codebase to Vue3, improving performance & maintainability",
-        "Developed FFmpeg-based audio downmixing and WebSocket-driven folder management",
-        "Optimized search performance by reducing OpenSearch query execution time by 40%",
-        "Increased file upload success rate by 95% through retry mechanisms",
-        "Trained 50+ engineers at Craftsmen Excellence Academy on Git best practices"
+        "Reduced QA release time by 98% (1 hr → 1 min) using GitHub Actions, saving ~120 engineering hours per month",
+        "Strengthened system security by eliminating XSS/injection vulnerabilities and adding MFA (AWS Cognito), securing data for 25+ enterprise clients",
+        "Optimized OpenSearch performance by 40% and increased upload success from 60% → 95% with intelligent retry logic, directly reducing customer churn complaints",
+        "Led feature delivery: migrated 50%+ of Vue2 → Vue3 codebase, built FFmpeg audio pipelines, and delivered real-time folder management with WebSockets + Lexorank",
+        "Mentored 50+ engineers in Git workflows, CI/CD, and debugging, improving developer productivity",
+        "Collaborated with product managers & QA to align feature delivery with enterprise customer requirements",
+        "Architected a real-time monitoring dashboard in Kelda (on-premise client) to track transcoding and ongoing system processes"
+      ]
+    },
+    {
+      "company": "Craftsmen Excellence Academy",
+      "position": "Craftsmentor",
+      "subtitle": "Git Training Specialist",
+      "location": "Dhaka, Bangladesh",
+      "period": "Dec 2023 - Present",
+      "description": "Seasonal role providing comprehensive Git training and mentorship to engineering teams.",
+      "achievements": [
+        "Provided hands-on training sessions on Git, covering essential commands and best practices",
+        "Guided participants through creating and managing pull requests and effective commit messages",
+        "Demonstrated advanced features like undoing changes, resetting, reverting, and git rebase",
+        "Taught debugging techniques with git bisect and recovery with git reflog",
+        "Introduced productivity commands like git fixup commits and git worktree",
+        "Created comprehensive Git training materials and presentations"
       ]
     },
     {
       "company": "Craftsmensoftware",
       "position": "Software Development Engineer I",
-      "subtitle": "Consultant at Mimir & Qbics media",
+      "subtitle": "Clients: Mimir & Qbics Media",
       "location": "Dhaka, Bangladesh",
       "period": "Dec 2021 - Dec 2023",
-      "description": "Built a multi-tenant MAM system serving 4,000+ users across 15+ enterprises.",
+      "description": "Architected multi-tenant MAM system serving 8,000+ active users across 12+ organizations. Leveraged AWS for seamless multimedia and metadata management across cloud and on-premise storage.",
       "achievements": [
-        "Engineered S3 multipart upload workflow with resumable support, reducing transfer failures by 95%",
-        "Reduced deployment time by 40% with AWS CodePipeline & CodeBuild automation",
-        "Developed real-time user & file tracking using AWS Lambda, DynamoDB, and SES"
+        "Engineered a robust S3 multipart upload pipeline, cutting transfer failure rate by 95% → improved customer satisfaction on large file transfers",
+        "Implemented real-time activity tracking via AWS Lambda, DynamoDB, and SES",
+        "Automated deployments with AWS CodePipeline & CodeBuild, cutting release time by 40%",
+        "Aligned with stakeholders to design test/staging workflows, accelerating delivery cycles by 30%"
       ]
     }
   ],
   "education": [
     {
       "institution": "United International University",
-      "degree": "B.Sc. in Computer Science",
+      "degree": "B.Sc. in Computer Science & Engineering",
       "location": "Dhaka, Bangladesh",
       "graduationDate": "August 2021",
-      "gpa": "3.91"
+      "gpa": "3.91/4.00",
+      "honors": "Magna Cum Laude"
+    },
+    {
+      "institution": "Dhaka City College",
+      "degree": "Higher Secondary Certificate (HSC), Science",
+      "location": "Dhaka, Bangladesh",
+      "graduationDate": "2016",
+      "gpa": "5.00/5.00"
+    },
+    {
+      "institution": "West Dhanmondi Yousuf High School",
+      "degree": "Secondary School Certificate (SSC), Science",
+      "location": "Dhaka, Bangladesh",
+      "graduationDate": "2014",
+      "gpa": "5.00/5.00"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Convolutional Neural Networks in TensorFlow",
+      "issuer": "Coursera",
+      "date": "October 2020",
+      "credentialId": "BWXGDKCRXMC9",
+      "url": "https://www.coursera.org/account/accomplishments/certificate/BWXGDKCRXMC9"
+    },
+    {
+      "title": "Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning",
+      "issuer": "Coursera",
+      "date": "August 2020",
+      "credentialId": "4RNP6HJV5RMT",
+      "url": "https://www.coursera.org/account/accomplishments/certificate/4RNP6HJV5RMT"
     }
   ],
   "research": [
     {
       "title": "SuicideBD: A Suicidal Dataset for Bangladesh",
-      "status": "Not published",
+      "status": "Under Review, Data Journal",
+      "description": "Bangladesh's first comprehensive suicide dataset with ML analytics",
       "url": "https://doi.org/10.6084/m9.figshare.20222724"
     }
   ],
   "pages": {
     "work": {
-      "title": "Work",
-      "subtitle": "Built 20+ projects across various domains, exploring new technologies."
+      "title": "Work & Projects",
+      "subtitle": "Built 20+ projects across various domains, from enterprise applications to games, exploring new technologies and delivering scalable solutions."
+    },
+    "about": {
+      "title": "About",
+      "subtitle": "Senior Software Engineer passionate about building scalable cloud solutions and mentoring the next generation of developers."
     }
   }
 }

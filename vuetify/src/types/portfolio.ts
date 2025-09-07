@@ -1,18 +1,35 @@
 export interface PersonalInfo {
   name: string
   title: string
+  subtitle?: string
   location: string
   timezone: string
   timezoneDisplay: string
+  phone?: string
   email: string
   linkedin: string
   github: string
+  openToRemote?: boolean
+  openToRelocation?: boolean
+  relocationNote?: string
   summary: string
   aboutSummary: string
+  coreStrengths?: string[]
+  availability?: {
+    notice: string
+    relocation: string
+    remote: string
+  }
+}
+
+export interface Skill {
+  name: string
+  proficiency: string
+  level: number
 }
 
 export interface Skills {
-  [category: string]: string[]
+  [category: string]: Skill[]
 }
 
 export interface Project {
@@ -22,6 +39,7 @@ export interface Project {
   url?: string
   featured?: boolean
   category?: string
+  year?: string
 }
 
 export interface WorkExperience {
@@ -40,11 +58,21 @@ export interface Education {
   location: string
   graduationDate: string
   gpa: string
+  honors?: string
+}
+
+export interface Certification {
+  title: string
+  issuer: string
+  date: string
+  credentialId?: string
+  url?: string
 }
 
 export interface Research {
   title: string
   status: string
+  description?: string
   url?: string
 }
 
@@ -55,6 +83,7 @@ export interface PageInfo {
 
 export interface Pages {
   work: PageInfo
+  about?: PageInfo
 }
 
 export interface PortfolioData {
@@ -63,6 +92,7 @@ export interface PortfolioData {
   projects: Project[]
   workExperience: WorkExperience[]
   education: Education[]
+  certifications?: Certification[]
   research: Research[]
   pages: Pages
 }
