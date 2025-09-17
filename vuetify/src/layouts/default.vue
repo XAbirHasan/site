@@ -22,7 +22,7 @@
           <router-link class="nav-link" to="/">Home</router-link>
           <router-link class="nav-link" to="/work">Work</router-link>
           <router-link class="nav-link" to="/about">About</router-link>
-          <router-link class="nav-link" to="/editor">Editor</router-link>
+          <!-- <router-link class="nav-link" to="/editor">Editor</router-link> -->
 
           <!-- Theme Toggle -->
           <v-btn
