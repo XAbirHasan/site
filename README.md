@@ -6,16 +6,6 @@
 
 Visit the live site: [https://xabirhasan.github.io/site/](https://xabirhasan.github.io/site/)
 
-## ✨ Features
-
-- **Modern Design**: Clean, professional interface with dark/light theme support
-- **Interactive Skills**: Hover tooltips and detailed proficiency levels
-- **Project Showcase**: Organized by categories with featured projects
-- **Responsive**: Optimized for all device sizes
-- **Fast Performance**: Built with Vite for optimal loading speeds
-- **SEO Friendly**: Proper meta tags and semantic HTML
-- **Auto Deploy**: GitHub Actions for seamless deployment
-
 ## 🛠️ Tech Stack
 
 - **Frontend**: Vue 3, TypeScript, Vuetify

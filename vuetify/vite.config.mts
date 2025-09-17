@@ -4,8 +4,6 @@ import Components from 'unplugin-vue-components/vite';
 import Fonts from 'unplugin-fonts/vite';
 import Layouts from 'vite-plugin-vue-layouts-next';
 import Vue from '@vitejs/plugin-vue';
-import VueRouter from 'unplugin-vue-router/vite';
-import { VueRouterAutoImports } from 'unplugin-vue-router';
 import Vuetify, { transformAssetUrls } from 'vite-plugin-vuetify';
 
 // Utilities
@@ -14,16 +12,13 @@ import { fileURLToPath, URL } from 'node:url';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/',
+  base: process.env.NODE_ENV === 'production' ? '/site/' : '/',
   plugins: [
-    VueRouter({
-      dts: 'src/typed-router.d.ts',
-    }),
     Layouts(),
     AutoImport({
       imports: [
         'vue',
-        VueRouterAutoImports,
+        'vue-router',
         {
           pinia: ['defineStore', 'storeToRefs'],
         },
@@ -63,9 +58,6 @@ export default defineConfig({
     exclude: [
       'vuetify',
       'vue-router',
-      'unplugin-vue-router/runtime',
-      'unplugin-vue-router/data-loaders',
-      'unplugin-vue-router/data-loaders/basic',
     ],
   },
   define: { 'process.env': {} },
@@ -82,6 +74,9 @@ export default defineConfig({
       '.tsx',
       '.vue',
     ],
+  },
+  build: {
+    sourcemap: true,
   },
   server: {
     port: 3000,
