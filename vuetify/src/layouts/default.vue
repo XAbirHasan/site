@@ -79,7 +79,7 @@
     <!-- Main Content -->
     <v-main class="main-content">
       <!-- Spacer for fixed navigation -->
-      <div class="nav-spacer" />
+      <!-- <div class="nav-spacer" /> -->
       <router-view />
     </v-main>
 

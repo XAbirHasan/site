@@ -27,6 +27,21 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: setupLayouts(routes),
+  scrollBehavior (to, from, savedPosition) {
+    // If there's a saved position (like back button), use it
+    if (savedPosition) {
+      return savedPosition;
+    }
+    // For hash links, scroll to the target element
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: 'smooth',
+      };
+    }
+    // For regular navigation, scroll to top
+    return { top: 0, behavior: 'smooth' };
+  },
 });
 
 // Workaround for https://github.com/vitejs/vite/issues/11804
